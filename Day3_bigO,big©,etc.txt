@@ -1,0 +1,1 @@
+Learnt bigO, smallo, big theta, etc and solved their examples.
