@@ -1,0 +1,51 @@
+learned the theory of introduction to recursion of kunal kushwala
+
+solved more than 10 examples
+some of them listed below
+
+1
+#print al decreasing number from n to 0
+
+def pri(n):
+    if n==0:
+        exit()
+    print(n)
+    n-=1
+    pri(n)
+print(pri(12))
+
+
+2
+#print al increasing no  number from 0 to n
+def countdown(n):
+    if n != 0:
+        countdown(n-1)
+    print(n)
+countdown(5)
+
+
+3
+def fact(n):
+    if n == 1:
+        return 1
+    return(n*fact(n-1))
+
+print(fact(6))
+
+
+
+4
+def rev(g):
+    g=int(g)
+    l=len(str(g))
+    reminder = int(g%10)
+    value = int(g%10 * 10**(l-1))
+    #print('value:', value)
+    new = (g-reminder)/10
+    
+    if new<=0:
+        return g
+    l = new
+    return(value+rev(new))
+    
+print(rev(89076584))
