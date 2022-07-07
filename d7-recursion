@@ -27,4 +27,14 @@ else:
  
  
  
- 2)
+ 2)count no. of 0
+ def zero(n):
+    if n == 0:
+        return 0
+    elif n%10 == 0:
+        return 1 + zero(int(n/10))
+    else:
+        return zero(int(n/10))
+        
+print(zero(4005080))
+
