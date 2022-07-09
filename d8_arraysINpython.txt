@@ -1,0 +1,2 @@
+started learning arrays in python
+solved some beginners level examples and also practised and revied recursion of basic level
