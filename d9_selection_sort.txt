@@ -1,0 +1,20 @@
+learnt selection sort in python
+
+example:
+n = [5,15,3,12,17,0]
+
+
+def min_v(n):
+    for i in range(len(n)):
+        min_pos = i
+        for j in range(i,len(n)):
+            if n[j]<n[min_pos]:
+                min_pos=j
+
+        temp = n[i]
+        n[i]=n[min_pos]
+        n[min_pos]=temp
+        print(n)
+
+min_v(n)
+print(n)
