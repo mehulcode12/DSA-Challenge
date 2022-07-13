@@ -10,10 +10,11 @@ def min_v(n):
         for j in range(i,len(n)):
             if n[j]<n[min_pos]:
                 min_pos=j
-
-        temp = n[i]
-        n[i]=n[min_pos]
-        n[min_pos]=temp
+        #swap
+        n[i], n[min_pos] = n[min_pos], n[i]
+        #temp = n[i]
+        #n[i]=n[min_pos]
+        #n[min_pos]=temp
         print(n)
 
 min_v(n)
