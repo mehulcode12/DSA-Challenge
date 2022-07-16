@@ -1,0 +1,20 @@
+decided to take break from academics study and solved a string question from hacker rank
+
+question : In this challenge, the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string. String traversal will take place from left to right, not from right to left.
+solution by me:
+def count_substring(string, sub_string):
+    total_count = 0
+    for i in range(len(string)):
+        f = string[i:len(sub_string)+i]
+        if f == sub_string:
+            total_count+=1
+    return total_count
+    
+        
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
